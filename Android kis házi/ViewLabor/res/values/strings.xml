@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ViewLabor</string>
+    <string name="registration">Registration</string>
+    <string name="username">Felhasználónév</string>
+    <string name="sex">Nem</string>
+    <string name="choose_3">Válassz max 3-at</string>
+</resources>
