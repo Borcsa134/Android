@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:background="@color/primary_light">
+
+    <com.devspark.robototextview.widget.RobotoEditText
+        android:id="@+id/callEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tableLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_toLeftOf="@+id/callBackSpaceButton"
+        android:layout_toStartOf="@+id/callBackSpaceButton"
+        android:textSize="@dimen/dialer_text_size" />
+
+    <ImageButton
+        android:id="@+id/callBackSpaceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tableLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/callEditText"
+        android:src="@drawable/ic_backspace_black_24dp" />
+
+    <com.devspark.robototextview.widget.RobotoButton
+        android:id="@+id/btn_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/call"
+        android:textSize="30sp"
+        app:fontFamily="roboto"
+        app:textStyle="normal"
+        app:textWeight="normal" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_call"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <com.devspark.robototextview.widget.RobotoButton
+                style="@style/DialerButton"
+                android:text="1"
+                android:id="@+id/btn_1"/>
+
+            <com.devspark.robototextview.widget.RobotoButton
+                style="@style/DialerButton"
+                android:text="2"
+                android:id="@+id/btn_2"/>
+
+            <com.devspark.robototextview.widget.RobotoButton
+                style="@style/DialerButton"
+                android:text="3"
+                android:id="@+id/btn_3"/>
+        </TableRow>
+
+        <TableRow>
+
+            <com.devspark.robototextview.widget.RobotoButton
+                style="@style/DialerButton"
+                android:text="4"
+                android:id="@+id/btn_4"/>
+
+            <com.devspark.robototextview.widget.RobotoButton
+                style="@style/DialerButton"
+                android:text="5"
+                android:id="@+id/btn_5"/>
+
+            <com.devspark.robototextview.widget.RobotoButton
+                style="@style/DialerButton"
+                android:text="6"
+                android:id="@+id/btn_6"/>
+        </TableRow>
+
+        <TableRow>
+
+            <com.devspark.robototextview.widget.RobotoButton
+                style="@style/DialerButton"
+                android:text="7"
+                android:id="@+id/btn_7"/>
+
+            <com.devspark.robototextview.widget.RobotoButton
+                style="@style/DialerButton"
+                android:text="8"
+                android:id="@+id/btn_8"/>
+
+            <com.devspark.robototextview.widget.RobotoButton
+                style="@style/DialerButton"
+                android:text="9"
+                android:id="@+id/btn_9"/>
+        </TableRow>
+
+        <TableRow>
+
+            <com.devspark.robototextview.widget.RobotoButton
+                style="@style/DialerButton"
+                android:text="*"
+                android:id="@+id/btn_star"/>
+
+            <com.devspark.robototextview.widget.RobotoButton
+                style="@style/DialerButton"
+                android:text="0"
+                android:id="@+id/btn_0"/>
+
+            <com.devspark.robototextview.widget.RobotoButton
+                style="@style/DialerButton"
+                android:text="#"
+                android:id="@+id/btn_sharp"/>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
